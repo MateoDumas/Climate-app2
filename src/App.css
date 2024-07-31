@@ -1,0 +1,205 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('https://picsum.photos/200/300?blur');
+  /* Agregué imagen de fondo */
+  background-size: cover;
+  background-position: center;
+}
+
+.App {
+  background: rgba(255, 255, 255, 0.8);
+  /* Agregué opacidad al fondo */
+  padding: 20px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Resto del código CSS */
+
+form {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* Agregué alineación central al formulario */
+  padding: 20px;
+  /* Agregué padding al formulario */
+}
+
+input {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #007BFF;
+  border-radius: 4px;
+  margin-right: 10px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+input:focus {
+  border-color: #0056b3;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background: #007BFF;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Agregué sombra al botón */
+  border: 2px solid #007BFF;
+  /* Agregué borde al botón */
+}
+
+button:hover {
+  background: #0056b3;
+  transition: background 0.3s;
+  /* Agregué transición al botón */
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 36px;
+  /* Agregué tamaño de fuente más grande al título */
+  font-weight: bold;
+  /* Agregué peso de fuente más grande al título */
+  margin: 0 auto;
+  /* Agregué alineación central al título */
+  padding: 20px;
+  /* Agregué padding al título */
+  animation: slideUp 0.5s;
+  /* Agregué animación al título */
+
+  background-size: 20px 20px;
+  /* Ajusté tamaño del icono */
+  background-position: left 50px center;
+  /* Ajusté posición del icono */
+  background-repeat: no-repeat;
+  /* Evité que el icono se repita */
+  padding-left: 3px;
+  /* Ajusté padding para que el texto no se superponga con el icono */
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  margin: 10px 0;
+  color: #007BFF;
+  background-color: #f2f2f2;
+  /* Agregué fondo claro al subtítulo */
+  padding: 10px;
+  /* Agregué padding al subtítulo */
+  border-radius: 4px;
+  /* Agregué borde redondeado al subtítulo */
+}
+
+p {
+  margin: 5px 0;
+  color: #666666;
+  font-size: 18px;
+  /* Agregué tamaño de fuente más grande al párrafo */
+}
+
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover {
+  font-size: 18px;
+  color: #0056b3;
+  transition: font-size 0.3s;
+  /* Agregué transición al enlace */
+}
+
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #007BFF;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3;
+}
+
+.cloud-icon {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/25/25694.png');
+  background-size: 20px 20
+}
+
+.city-list {
+  margin-top: 20px;
+}
+
+.city-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.city-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.city-list li button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.city-list input {
+  padding: 5px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+/* Estilos para el diseño responsivo */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px 20px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  input {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .city-list li {
+    flex-direction: column;
+  }
+}
