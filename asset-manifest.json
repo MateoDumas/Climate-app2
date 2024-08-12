@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Climate-app2/static/css/main.f208eaa2.css",
+    "main.js": "/Climate-app2/static/js/main.ffabbee1.js",
+    "static/js/488.b4a762b3.chunk.js": "/Climate-app2/static/js/488.b4a762b3.chunk.js",
+    "index.html": "/Climate-app2/index.html",
+    "main.f208eaa2.css.map": "/Climate-app2/static/css/main.f208eaa2.css.map",
+    "main.ffabbee1.js.map": "/Climate-app2/static/js/main.ffabbee1.js.map",
+    "488.b4a762b3.chunk.js.map": "/Climate-app2/static/js/488.b4a762b3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f208eaa2.css",
+    "static/js/main.ffabbee1.js"
+  ]
+}
